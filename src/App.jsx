@@ -5,7 +5,8 @@ import NavIcons from "./components/NavIcons";
 import ImageContainer from "./components/ImageContainer";
 import PageCount from "./components/PageCount";
 import RightFooter from "./components/RightFooter";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import PayPalPayment from "./components/PayPalPayment";
 
 function App() {
   const initialOptions = {
@@ -21,7 +22,7 @@ function App() {
         <div className="h-full flex-1 pl-40 pr-24 pb-8 flex flex-col justify-between">
           <Navlinks />
           <HeroTextContent />
-          <PayPalButtons />
+          <PayPalPayment />
           <LeftFooter />
         </div>
         <div className="h-full flex-1 bg-[#FFF0C8] pr-40 pb-8 flex flex-col justify-between relative">
